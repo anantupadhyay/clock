@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Display Date and Time</title>
+        <script type="text/javascript" src="date_time.js"></script>
+        <style>
+    body {
+    background-color: #80d4ea;
+}
+
+#clock {
+    height: 200px;
+    width: 800px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 70px;
+    font-family: courier, monospace;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+}
+</style>
+    </head>
+    <body>
+        <div id="clock">
+            <span id="date_time"></span>
+            <script type="text/javascript">window.onload = date_time('date_time');</script>
+        </div>
+    </body>
+</html>
